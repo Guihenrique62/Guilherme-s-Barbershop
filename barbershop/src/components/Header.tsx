@@ -32,8 +32,8 @@ export default function Header() {
           
           <div className='flex justify-end text-white roboto-medium'>
             <nav className=' flex gap-6 px-14 items-center'>
-              <a href="">HOME</a>
-              <a href="">SOBRE</a>
+              <a href="#home">HOME</a>
+              <a href="#sobre">SOBRE</a>
               <a href="">EQUIPE</a>
               <a href="">SERVIÇOS</a>
               <a href="">CLUBE</a>

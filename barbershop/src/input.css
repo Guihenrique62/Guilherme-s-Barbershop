@@ -76,7 +76,7 @@
 
 
 .wp-001{
-  background-image: url('../public/bg01.png');
+  background-image: url('/bg01.png');
 }
 
 .header-transparent {
