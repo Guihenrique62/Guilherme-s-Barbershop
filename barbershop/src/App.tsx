@@ -1,47 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { Clock, MessageSquare } from 'lucide-react'
+import './output.css'
+import { useEffect, useState } from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
 
 function App() {
+
   
 
   return (
     <>
-      <header>
-        <div>
-          <img src="" alt="" />
-        </div>
-
-        <div>
-          <div>
-            <a href="">HOME</a>
-            <a href="">SOBRE</a>
-            <a href="">EQUIPE</a>
-            <a href="">SERVIÇOS</a>
-            <a href="">CLUBE</a>
-          </div>
-
-          <button>
-            AGENDE AGORA
-          </button>
-        </div>
-      </header>
+      
+      <Header/>
 
       {/* Component Home */}
-      <div>
-        <h1>Seu Estilo em boas mãos.</h1>
-        <h3>Espaço personalizado e climatizado para te oferecer uma experiência sem igual.</h3>
-        <button>AGENDE SEU HORÁRIO</button>
-      </div>
+      <Home/>
+
 
       {/* Component Sobre */}
-      <div>
-        <div>
+      <div className='bg-black h-screen text-white'>
+        <div className='w-1/2'>
           <h2>Sobre</h2>
-          <img src="" alt="" />
+          <img src="bigode.png" alt="" />
         </div>
         <div>
-          <p>Com uma pegada mais moderna, a Guilherme´s Barbearia vai na contramão do tradicional estilo das barbearias e aposta na originalidade.</p>
+          <p>Com uma pegada mais moderna, a Guilherme's Barbearia vai na contramão do tradicional estilo das barbearias e aposta na originalidade.</p>
           <p>Localizada em um dos bairros mais conhecidos e badalados de Goiânia.</p>
           <p>Desde 2024, buscando pelo bem estar de todos os clientes através dos serviços de qualidade e com os melhores profissionais.</p>
         </div>
@@ -118,3 +102,4 @@ function App() {
 }
 
 export default App
+
