@@ -77,6 +77,7 @@
 
 .wp-001{
   background-image: url('/bg01.png');
+  background-size: cover;
 }
 
 .header-transparent {
@@ -86,4 +87,20 @@
 .header-black {
   background-color: rgba(0, 0, 0, 0.7);
   transition: background-color 0.4s ease;
+}
+
+.img-ctn-animate {
+  animation: slideIn 1s forwards; 
+  opacity: 0; 
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%); /* Começa fora do viewport à direita */
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0); /* Termina na posição original (esquerda) */
+    opacity: 1; 
+  }
 }
